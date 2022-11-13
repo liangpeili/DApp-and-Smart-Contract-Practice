@@ -39,6 +39,7 @@
 
 1. 修改参考文件 `ERC20Sample.sol`里Token的name为自己姓名的全拼，symbol为自己名字拼音首字母大写，总量为1亿，精度为18；
 2. 使用账户A部署 ERC20 代币到教学测试链或本地；
+   
 ![Pasted image 20221109225334.png](../images/Pasted%20image%2020221109225334.png)
 3. 使用账户A调用合约的transfer方法转账100个代币到账户B，并调用合约的balanceOf方法查询账户B的余额；
 ![Pasted image 20221109225550.png](../images/Pasted%20image%2020221109225550.png)
