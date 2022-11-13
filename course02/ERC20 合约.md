@@ -41,15 +41,21 @@
 2. 使用账户A部署 ERC20 代币到教学测试链或本地；
    
 ![Pasted image 20221109225334.png](../images/Pasted%20image%2020221109225334.png)
+
 3. 使用账户A调用合约的transfer方法转账100个代币到账户B，并调用合约的balanceOf方法查询账户B的余额；
+
 ![Pasted image 20221109225550.png](../images/Pasted%20image%2020221109225550.png)
 ![Pasted image 20221109225602.png](../images/Pasted%20image%2020221109225602.png)
+
 4. 使用账户A，调用合约的approve方法，使得账户A对账户B的allowance为`9999 * 精度`；
+
 ![Pasted image 20221109225752.png](../images/Pasted%20image%2020221109225752.png)
 ![Pasted image 20221109225819.png](../images/Pasted%20image%2020221109225819.png)
+
 5. 使用账户B，调用transferFrom方法，把账户A的代币（数量1000 个以上）转账给账户C；
 ![Pasted image 20221109230054.png](../images/Pasted%20image%2020221109230054.png)
 ![Pasted image 20221109230217.png](../images/Pasted%20image%2020221109230217.png)
+
 6. 修改ERC20合约代码，创建管理员账户，使得管理员账户可以给任意地址增发任意数量的代币；
 ![Pasted image 20221109230630.png](../images/Pasted%20image%2020221109230630.png)
 ![Pasted image 20221109230647.png](../images/Pasted%20image%2020221109230647.png)
@@ -59,10 +65,12 @@
 ![Pasted image 20221109230949.png](../images/Pasted%20image%2020221109230949.png)
 ![Pasted image 20221109231120.png](../images/Pasted%20image%2020221109231120.png)
 ![Pasted image 20221109231132.png](../images/Pasted%20image%2020221109231132.png)
+
 2. 在ERC20合约里新增字段，记录所有持币地址**转出**的代币数量总和；
 ![Pasted image 20221109231540.png](../images/Pasted%20image%2020221109231540.png)
 ![Pasted image 20221109231554.png](../images/Pasted%20image%2020221109231554.png)
 ![Pasted image 20221109231623.png](../images/Pasted%20image%2020221109231623.png)
+
 3. 修改ERC20的approve方法，使得approve的上限为`123456 * 精度`
 ![Pasted image 20221109231719.png](../images/Pasted%20image%2020221109231719.png)
 ![Pasted image 20221109231743.png](../images/Pasted%20image%2020221109231743.png)
