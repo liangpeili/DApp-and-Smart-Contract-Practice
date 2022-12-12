@@ -1,3 +1,5 @@
 .DS_Store
 artifacts/
 remix-compiler.config.js
+node_modules/
+package-lock.json
